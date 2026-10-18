@@ -393,15 +393,28 @@ void App::event(PipeEvent &e) {
     auto session = j.value("session", "");
     if (session.size() > 80 || session.empty())
         return;
+    // The foreground window can belong to ApplicationFrameHost (UWP) or a
+    // different Electron process than the TSF client. Prefer the HWND that the
+    // TSF bridge saw focused; fall back to the foreground PID for older bridges.
+    auto source_allowed = [&](const Json &message) {
+        if (headless_)
+            return true;
+        DWORD foreground = 0;
+        GetWindowThreadProcessId(GetForegroundWindow(), &foreground);
+        if (foreground == e.peer->peer_pid)
+            return true;
+        auto raw = message.value("hwnd", uint64_t(0));
+        HWND source = reinterpret_cast<HWND>(static_cast<uintptr_t>(raw));
+        DWORD source_pid = 0;
+        if (source)
+            GetWindowThreadProcessId(source, &source_pid);
+        return source_pid == e.peer->peer_pid;
+    };
     if (type == "key") {
         if (!rime_.ready())
             return;
-        if (!headless_) {
-            DWORD foreground = 0;
-            GetWindowThreadProcessId(GetForegroundWindow(), &foreground);
-            if (foreground != e.peer->peer_pid)
-                return;
-        }
+        if (!source_allowed(j))
+            return;
         auto seq = j.value("seq", uint64_t(0));
         if (session != session_ || e.peer != peer_) {
             end();
@@ -436,12 +449,8 @@ void App::event(PipeEvent &e) {
         auto seq = j.value("layout_seq", uint64_t(0));
         if (seq <= layout_sequence_ || !buffer_.active())
             return;
-        if (!headless_) {
-            DWORD foreground = 0;
-            GetWindowThreadProcessId(GetForegroundWindow(), &foreground);
-            if (foreground != e.peer->peer_pid)
-                return;
-        }
+        if (!source_allowed(j))
+            return;
         bool visible = j.value("visible", false);
         RECT next = anchor_;
         if (visible) {

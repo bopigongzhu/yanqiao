@@ -7,7 +7,7 @@ $targetDir = [System.IO.Path]::GetFullPath((Join-Path $env:ProgramFiles 'EShuRu'
 $expectedDir = [System.IO.Path]::GetFullPath((Join-Path $env:ProgramFiles 'EShuRu'))
 if ($targetDir -ne $expectedDir -or [System.IO.Path]::GetFileName($targetDir) -ne 'EShuRu') { throw 'Unexpected uninstall path' }
 if ((Test-Path -LiteralPath $targetDir) -and ((Get-Item -LiteralPath $targetDir).Attributes -band [IO.FileAttributes]::ReparsePoint)) { throw 'Refusing to operate on a junction or symlink.' }
-$bridgeName = if (Test-Path -LiteralPath (Join-Path $targetDir 'EShuRuTip-0.2.5.2.dll')) { 'EShuRuTip-0.2.5.2.dll' } elseif (Test-Path -LiteralPath (Join-Path $targetDir 'EShuRuTip-0.2.5.1.dll')) { 'EShuRuTip-0.2.5.1.dll' } elseif (Test-Path -LiteralPath (Join-Path $targetDir 'EShuRuTip-0.2.5.dll')) { 'EShuRuTip-0.2.5.dll' } else { 'EShuRuTip.dll' }
+$bridgeName = if (Test-Path -LiteralPath (Join-Path $targetDir 'EShuRuTip-0.2.5.3.dll')) { 'EShuRuTip-0.2.5.3.dll' } elseif (Test-Path -LiteralPath (Join-Path $targetDir 'EShuRuTip-0.2.5.2.dll')) { 'EShuRuTip-0.2.5.2.dll' } elseif (Test-Path -LiteralPath (Join-Path $targetDir 'EShuRuTip-0.2.5.1.dll')) { 'EShuRuTip-0.2.5.1.dll' } elseif (Test-Path -LiteralPath (Join-Path $targetDir 'EShuRuTip-0.2.5.dll')) { 'EShuRuTip-0.2.5.dll' } else { 'EShuRuTip.dll' }
 $dllPath = Join-Path $targetDir $bridgeName
 $dll32Path = Join-Path $targetDir ('x86\' + $bridgeName)
 if (Test-Path -LiteralPath $dll32Path) {

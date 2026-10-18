@@ -94,6 +94,7 @@ class Tip final : public ProcessorEx,
          engine_ready_ = false;
     std::array<bool, 256> eaten_{};
     RECT caret_{};
+    HWND caret_hwnd_ = nullptr;
     IUnknown *identity() {
         return static_cast<ProcessorEx *>(this);
     }
@@ -119,17 +120,22 @@ class Tip final : public ProcessorEx,
         layout_cookie_ = TF_INVALID_COOKIE;
         session_.clear();
         sequence_ = 0;
+        caret_hwnd_ = nullptr;
         active_ = false;
         committing_ = false;
         anchor_.reset();
         context_.reset();
     }
     bool read_caret(TfEditCookie cookie, RECT &rect) {
+        caret_hwnd_ = nullptr;
         if (!context_ || !anchor_)
             return false;
         ComPtr<ITfContextView> view;
         if (FAILED(context_->GetActiveView(view.put())))
             return false;
+        HWND owner = nullptr;
+        if (SUCCEEDED(view->GetWnd(&owner)))
+            caret_hwnd_ = owner;
         BOOL clipped = FALSE;
         HRESULT hr = view->GetTextExt(cookie, anchor_.get(), &rect, &clipped);
         if (SUCCEEDED(hr)) {
@@ -147,13 +153,14 @@ class Tip final : public ProcessorEx,
         if (hr == TF_E_NOLAYOUT)
             return false;
         // Legacy controls may expose a native caret instead of text extents.
-        HWND owner = nullptr;
-        view->GetWnd(&owner);
+        if (!owner)
+            view->GetWnd(&owner);
         GUITHREADINFO info{sizeof(info)};
         if (owner && GetGUIThreadInfo(GetCurrentThreadId(), &info) && info.hwndCaret &&
             (info.hwndCaret == owner || IsChild(owner, info.hwndCaret))) {
             rect = info.rcCaret;
             MapWindowPoints(info.hwndCaret, nullptr, reinterpret_cast<POINT *>(&rect), 2);
+            caret_hwnd_ = owner;
             return rect.bottom > rect.top;
         }
         return false;
@@ -218,7 +225,8 @@ class Tip final : public ProcessorEx,
                                 {"session", id},
                                 {"layout_seq", ++layout_sequence_},
                                 {"visible", visible},
-                                {"anchor", {caret_.left, caret_.top, caret_.right, caret_.bottom}}});
+                                {"anchor", {caret_.left, caret_.top, caret_.right, caret_.bottom}},
+                                {"hwnd", static_cast<uint64_t>(reinterpret_cast<uintptr_t>(caret_hwnd_))}});
             }
             return S_OK;
         });
@@ -366,7 +374,8 @@ class Tip final : public ProcessorEx,
                             {"shift", bool(GetKeyState(VK_SHIFT) & 0x8000)},
                             {"char", utf8(text)},
                             {"anchor_visible", caret_visible_},
-                            {"anchor", Json::array({caret_.left, caret_.top, caret_.right, caret_.bottom})}});
+                            {"anchor", Json::array({caret_.left, caret_.top, caret_.right, caret_.bottom})},
+                            {"hwnd", static_cast<uint64_t>(reinterpret_cast<uintptr_t>(GetFocus()))}});
         if (!sent)
             end();
         else if (active_) {

@@ -4,7 +4,7 @@ if (-not [Environment]::Is64BitProcess) { throw 'Run this script from 64-bit Pow
 $packageRoot = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $sourceDir = if (Test-Path -LiteralPath (Join-Path $packageRoot 'EShuRu.exe')) { $packageRoot } else { Join-Path $packageRoot 'build\0.2.5\x64\bin' }
 $targetDir = Join-Path $env:ProgramFiles 'EShuRu'
-$bridgeName = 'EShuRuTip-0.2.5.2.dll'
+$bridgeName = 'EShuRuTip-0.2.5.3.dll'
 $bridge64 = Join-Path $targetDir $bridgeName
 $bridge32 = Join-Path $targetDir ('x86\' + $bridgeName)
 if ([IO.Path]::GetFullPath($sourceDir) -eq [IO.Path]::GetFullPath($targetDir)) { throw 'Run installation from the extracted package or project folder, not the installed directory.' }
