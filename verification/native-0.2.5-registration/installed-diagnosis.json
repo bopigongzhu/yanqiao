@@ -1,0 +1,24 @@
+﻿{
+    "package":  "C:\\Program Files\\EShuRu",
+    "elevated":  false,
+    "os_64bit":  true,
+    "process_64bit":  true,
+    "missing":  [
+
+                ],
+    "architecture":  {
+                         "x86\\EShuRuTip-0.2.5.1.dll":  "0x014C",
+                         "EShuRuTip-0.2.5.1.dll":  "0x8664",
+                         "EShuRu.exe":  "0x8664"
+                     },
+    "registration":  {
+                         "Registry64":  "C:\\Program Files\\EShuRu\\EShuRuTip-0.2.5.1.dll",
+                         "Registry32":  "C:\\Program Files\\EShuRu\\x86\\EShuRuTip-0.2.5.1.dll"
+                     },
+    "language_tip":  true,
+    "profile_enabled":  true,
+    "broker_pids":  [
+                        23780
+                    ],
+    "scope":  "Read-only files, PE architecture, COM registration and per-user TSF list. Does not test application compatibility; reads no API key or user frequency."
+}

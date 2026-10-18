@@ -1,0 +1,22 @@
+{
+    "package":  "D:\\尝试\\E_ShuRu\\build\\0.2.1\\x64\\bin",
+    "elevated":  false,
+    "os_64bit":  true,
+    "process_64bit":  true,
+    "missing":  [
+
+                ],
+    "architecture":  {
+                         "EShuRuTip.dll":  "0x8664",
+                         "x86\\EShuRuTip.dll":  "0x014C",
+                         "EShuRu.exe":  "0x8664"
+                     },
+    "registration":  {
+                         "Registry64":  null,
+                         "Registry32":  null
+                     },
+    "broker_pids":  [
+
+                    ],
+    "scope":  "Read-only files, PE architecture and COM registration. Does not verify TSF language profile or application compatibility; reads no API key or user frequency."
+}

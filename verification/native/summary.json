@@ -1,0 +1,50 @@
+{
+  "tested_at": "2026-10-06T00:18:46.295577+08:00",
+  "results": [
+    {
+      "name": "ctest",
+      "exit_code": 0
+    },
+    {
+      "name": "tsf-x86",
+      "exit_code": 0
+    },
+    {
+      "name": "integration",
+      "exit_code": 0
+    },
+    {
+      "name": "native-ui",
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "src/ai.cpp": "de92dfdf47b750d5ed6107ecdc4fc34ea7af11d8f2eff953747d4ad53e5dcad5",
+    "src/ai.hpp": "c77faef4f8b780038a3e73eef0249780ef05e88929d01fe6c494ab2d24f28f59",
+    "src/app.cpp": "e3e9dcc60aaf5208bddc483f863aa0effdd383972aaba732e25d5093528afedd",
+    "src/app.hpp": "b77a7e4da06599ae79563b62ad78443fe2589515ccb52fe850fa766b2808351a",
+    "src/common.cpp": "55fde8082bd0a1b89a9bf63212d317f6f629ef700c7ac2121acd0e12e6249201",
+    "src/common.hpp": "4a3fac86aac1b376d2e984927f5f34d9dfcc3f96515e36223b5a4ea47e104141",
+    "src/core.cpp": "326eace49c7d424ea88a94cdca2a50ce35f2bd2d7d6c85c658f02231e3c0ca5d",
+    "src/core.hpp": "402bd031273aa6bc261dac136d5c28e965d5a9d4068f886a4a5e386a776e5ee1",
+    "src/ipc.cpp": "c3fad26a212973f839a1a9e618169ae3abbba2d3d078e68b11c707e7a815eb9e",
+    "src/ipc.hpp": "1995f80d7a14ea9aee5d85b9e5a2281281413079ea2ad7ab414840492bd41579",
+    "src/main.cpp": "998f6d40fd2b564d0ada4cb8066c4c96e6888b271c33f2cfb20fcdbdabc250c7",
+    "src/panel.cpp": "d010918747bc4a7426edc1bb85eb8dc2ae24991a2348141b747d23c7c2ac22bb",
+    "src/panel.hpp": "ebc3f98d8bf6da5fbe854f0fe4784d94261bf4502c7e677acd17433be81b589e",
+    "src/rime_engine.cpp": "7c3cd9805c20fa505b6ac1c220581b48e33f3bc16e6a5e1ad4799f479d294244",
+    "src/rime_engine.hpp": "ab257cdc114ed11f0a56dd6424e9808fada1989fc2075fabef5d11541505dc44",
+    "src/sandbox.cpp": "1bd068b2cd5f60fde6c26b25dc61540041a4ef3e54a7ddce56879399a16d3452",
+    "src/sandbox.hpp": "b5b99e451a08123e0346d4f5dcec705e1a3328d8ecda798e743a8c520d9cc5cd",
+    "src/tsf.cpp": "a0a2cb8a8b73cf055b7c859cb9fa7a865c9328b5854a1ecb608b530111d2f4c3",
+    "src/tsf.def": "e223b1d351c6df15e5774404a96acf72d112b406302c6bb402a3035aaf928d39",
+    "tests/core_tests.cpp": "1e2d1e4485a7cf1034e0d951534797b106fca81f47130e8af9b68a378f6af4fe",
+    "tests/integration_tests.cpp": "5828f3a925ed2cd90c7d7dd84702064f6a6feabffe3a10a87eb0933ba927f803",
+    "tests/ipc_cancel_tests.cpp": "41173d9fb2b4908e5c6a60156ba5f79c7645e485ba3f4588d908e9a1c7f2c34e",
+    "tests/tsf_smoke.cpp": "c9f76fbdef43a0ac28fdccd8f6c575b94a432e83c3b6ef8866b208570e9e75bd",
+    "data/default.yaml": "feca8602b45bf60ffb73fe5e700ddb07bdb693be25f2b2d34b10bb1d77604c17",
+    "data/e_shuru.schema.yaml": "f5ee55ca84aa7a93c01b98a02315677b6fc1ecb57c6935eaf5fcea6be28e5fbf",
+    "data/pinyin_simp.dict.yaml": "e341598343a0f0f2035bb1aafc34a7f3bb7887deeecb3f60796262aaa2983e6b"
+  },
+  "scope": "Local real-Rime core, IPC, sandbox and isolated secure TSF lifecycle. No system registration, installed-app compatibility, cloud latency or endurance acceptance."
+}

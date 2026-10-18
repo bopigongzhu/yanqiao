@@ -1,0 +1,495 @@
+{
+  "passed": 6,
+  "checks": [
+    "Panel follows parent window movement without another key",
+    "Scrolling out and back does not prematurely insert or lose selected draft",
+    "Active draft follows across attached monitors",
+    "Moved and scrolled draft commits once at original selection",
+    "Changed host selection cancels old draft",
+    "Sustained movement, repaint and composition replacement complete"
+  ],
+  "requested_seconds": 300,
+  "samples": [
+    {
+      "seconds": 0.34300000000803266,
+      "broker": {
+        "private_MiB": 60.24609375,
+        "working_set_MiB": 52.3671875,
+        "handles": 424,
+        "cpu_seconds": 0.359375
+      },
+      "host": {
+        "private_MiB": 2.11328125,
+        "working_set_MiB": 12.14453125,
+        "handles": 150,
+        "cpu_seconds": 0.046875
+      }
+    },
+    {
+      "seconds": 10.093000000008033,
+      "broker": {
+        "private_MiB": 62.546875,
+        "working_set_MiB": 52.91015625,
+        "handles": 424,
+        "cpu_seconds": 0.515625
+      },
+      "host": {
+        "private_MiB": 2.11328125,
+        "working_set_MiB": 12.1484375,
+        "handles": 150,
+        "cpu_seconds": 0.09375
+      }
+    },
+    {
+      "seconds": 20.078000000008615,
+      "broker": {
+        "private_MiB": 62.546875,
+        "working_set_MiB": 52.91015625,
+        "handles": 424,
+        "cpu_seconds": 0.71875
+      },
+      "host": {
+        "private_MiB": 2.11328125,
+        "working_set_MiB": 12.15234375,
+        "handles": 150,
+        "cpu_seconds": 0.140625
+      }
+    },
+    {
+      "seconds": 30.047000000005937,
+      "broker": {
+        "private_MiB": 62.546875,
+        "working_set_MiB": 52.91015625,
+        "handles": 421,
+        "cpu_seconds": 0.875
+      },
+      "host": {
+        "private_MiB": 2.109375,
+        "working_set_MiB": 12.1640625,
+        "handles": 151,
+        "cpu_seconds": 0.21875
+      }
+    },
+    {
+      "seconds": 40.03100000000268,
+      "broker": {
+        "private_MiB": 62.5078125,
+        "working_set_MiB": 52.89453125,
+        "handles": 419,
+        "cpu_seconds": 1.03125
+      },
+      "host": {
+        "private_MiB": 2.203125,
+        "working_set_MiB": 12.17578125,
+        "handles": 151,
+        "cpu_seconds": 0.296875
+      }
+    },
+    {
+      "seconds": 50.09300000000803,
+      "broker": {
+        "private_MiB": 62.5078125,
+        "working_set_MiB": 52.89453125,
+        "handles": 419,
+        "cpu_seconds": 1.25
+      },
+      "host": {
+        "private_MiB": 2.203125,
+        "working_set_MiB": 12.17578125,
+        "handles": 151,
+        "cpu_seconds": 0.34375
+      }
+    },
+    {
+      "seconds": 60.078000000008615,
+      "broker": {
+        "private_MiB": 62.40625,
+        "working_set_MiB": 52.83984375,
+        "handles": 422,
+        "cpu_seconds": 1.453125
+      },
+      "host": {
+        "private_MiB": 2.16796875,
+        "working_set_MiB": 12.15234375,
+        "handles": 151,
+        "cpu_seconds": 0.390625
+      }
+    },
+    {
+      "seconds": 70.03100000000268,
+      "broker": {
+        "private_MiB": 62.37890625,
+        "working_set_MiB": 52.82421875,
+        "handles": 422,
+        "cpu_seconds": 1.578125
+      },
+      "host": {
+        "private_MiB": 2.16796875,
+        "working_set_MiB": 12.15234375,
+        "handles": 151,
+        "cpu_seconds": 0.421875
+      }
+    },
+    {
+      "seconds": 80.01499999999942,
+      "broker": {
+        "private_MiB": 62.3828125,
+        "working_set_MiB": 52.828125,
+        "handles": 422,
+        "cpu_seconds": 1.78125
+      },
+      "host": {
+        "private_MiB": 2.16796875,
+        "working_set_MiB": 12.15234375,
+        "handles": 151,
+        "cpu_seconds": 0.484375
+      }
+    },
+    {
+      "seconds": 90.07800000000861,
+      "broker": {
+        "private_MiB": 62.3828125,
+        "working_set_MiB": 52.828125,
+        "handles": 422,
+        "cpu_seconds": 2.0
+      },
+      "host": {
+        "private_MiB": 2.16796875,
+        "working_set_MiB": 12.15234375,
+        "handles": 151,
+        "cpu_seconds": 0.546875
+      }
+    },
+    {
+      "seconds": 100.06200000000536,
+      "broker": {
+        "private_MiB": 62.3828125,
+        "working_set_MiB": 52.828125,
+        "handles": 422,
+        "cpu_seconds": 2.15625
+      },
+      "host": {
+        "private_MiB": 2.16796875,
+        "working_set_MiB": 12.15234375,
+        "handles": 151,
+        "cpu_seconds": 0.625
+      }
+    },
+    {
+      "seconds": 110.04700000000594,
+      "broker": {
+        "private_MiB": 62.3828125,
+        "working_set_MiB": 52.83203125,
+        "handles": 422,
+        "cpu_seconds": 2.40625
+      },
+      "host": {
+        "private_MiB": 2.16796875,
+        "working_set_MiB": 12.15234375,
+        "handles": 151,
+        "cpu_seconds": 0.625
+      }
+    },
+    {
+      "seconds": 120.01499999999942,
+      "broker": {
+        "private_MiB": 62.3828125,
+        "working_set_MiB": 52.83203125,
+        "handles": 422,
+        "cpu_seconds": 2.609375
+      },
+      "host": {
+        "private_MiB": 2.16796875,
+        "working_set_MiB": 12.15625,
+        "handles": 151,
+        "cpu_seconds": 0.640625
+      }
+    },
+    {
+      "seconds": 130.0,
+      "broker": {
+        "private_MiB": 62.3828125,
+        "working_set_MiB": 52.83203125,
+        "handles": 422,
+        "cpu_seconds": 2.75
+      },
+      "host": {
+        "private_MiB": 2.16796875,
+        "working_set_MiB": 12.15625,
+        "handles": 151,
+        "cpu_seconds": 0.703125
+      }
+    },
+    {
+      "seconds": 140.06200000000536,
+      "broker": {
+        "private_MiB": 62.35546875,
+        "working_set_MiB": 52.81640625,
+        "handles": 422,
+        "cpu_seconds": 2.96875
+      },
+      "host": {
+        "private_MiB": 2.109375,
+        "working_set_MiB": 12.1328125,
+        "handles": 149,
+        "cpu_seconds": 0.78125
+      }
+    },
+    {
+      "seconds": 150.04700000000594,
+      "broker": {
+        "private_MiB": 62.35546875,
+        "working_set_MiB": 52.8203125,
+        "handles": 424,
+        "cpu_seconds": 3.109375
+      },
+      "host": {
+        "private_MiB": 2.109375,
+        "working_set_MiB": 12.1328125,
+        "handles": 149,
+        "cpu_seconds": 0.828125
+      }
+    },
+    {
+      "seconds": 160.01499999999942,
+      "broker": {
+        "private_MiB": 62.35546875,
+        "working_set_MiB": 52.8203125,
+        "handles": 424,
+        "cpu_seconds": 3.28125
+      },
+      "host": {
+        "private_MiB": 2.109375,
+        "working_set_MiB": 12.1328125,
+        "handles": 149,
+        "cpu_seconds": 0.859375
+      }
+    },
+    {
+      "seconds": 170.01499999999942,
+      "broker": {
+        "private_MiB": 62.35546875,
+        "working_set_MiB": 52.8203125,
+        "handles": 424,
+        "cpu_seconds": 3.5
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.12109375,
+        "handles": 149,
+        "cpu_seconds": 0.890625
+      }
+    },
+    {
+      "seconds": 180.1090000000113,
+      "broker": {
+        "private_MiB": 62.38671875,
+        "working_set_MiB": 52.8359375,
+        "handles": 426,
+        "cpu_seconds": 3.640625
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.125,
+        "handles": 149,
+        "cpu_seconds": 0.96875
+      }
+    },
+    {
+      "seconds": 190.07800000000861,
+      "broker": {
+        "private_MiB": 62.38671875,
+        "working_set_MiB": 52.8359375,
+        "handles": 426,
+        "cpu_seconds": 3.8125
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.125,
+        "handles": 149,
+        "cpu_seconds": 0.96875
+      }
+    },
+    {
+      "seconds": 200.06200000000536,
+      "broker": {
+        "private_MiB": 62.38671875,
+        "working_set_MiB": 52.8359375,
+        "handles": 426,
+        "cpu_seconds": 3.96875
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.125,
+        "handles": 149,
+        "cpu_seconds": 1.03125
+      }
+    },
+    {
+      "seconds": 210.04700000000594,
+      "broker": {
+        "private_MiB": 62.38671875,
+        "working_set_MiB": 52.8359375,
+        "handles": 426,
+        "cpu_seconds": 4.15625
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.125,
+        "handles": 149,
+        "cpu_seconds": 1.0625
+      }
+    },
+    {
+      "seconds": 220.03100000000268,
+      "broker": {
+        "private_MiB": 62.5703125,
+        "working_set_MiB": 52.94140625,
+        "handles": 426,
+        "cpu_seconds": 4.328125
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.1328125,
+        "handles": 149,
+        "cpu_seconds": 1.125
+      }
+    },
+    {
+      "seconds": 230.09300000000803,
+      "broker": {
+        "private_MiB": 62.5703125,
+        "working_set_MiB": 52.94140625,
+        "handles": 430,
+        "cpu_seconds": 4.453125
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.1328125,
+        "handles": 149,
+        "cpu_seconds": 1.171875
+      }
+    },
+    {
+      "seconds": 240.09300000000803,
+      "broker": {
+        "private_MiB": 62.5703125,
+        "working_set_MiB": 52.94140625,
+        "handles": 430,
+        "cpu_seconds": 4.65625
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.1328125,
+        "handles": 149,
+        "cpu_seconds": 1.203125
+      }
+    },
+    {
+      "seconds": 250.06200000000536,
+      "broker": {
+        "private_MiB": 62.5703125,
+        "working_set_MiB": 52.94140625,
+        "handles": 430,
+        "cpu_seconds": 4.84375
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.1328125,
+        "handles": 149,
+        "cpu_seconds": 1.25
+      }
+    },
+    {
+      "seconds": 260.04700000000594,
+      "broker": {
+        "private_MiB": 62.5703125,
+        "working_set_MiB": 52.94140625,
+        "handles": 430,
+        "cpu_seconds": 5.0
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.1328125,
+        "handles": 149,
+        "cpu_seconds": 1.3125
+      }
+    },
+    {
+      "seconds": 270.0310000000027,
+      "broker": {
+        "private_MiB": 62.5390625,
+        "working_set_MiB": 52.9296875,
+        "handles": 424,
+        "cpu_seconds": 5.203125
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.1328125,
+        "handles": 149,
+        "cpu_seconds": 1.375
+      }
+    },
+    {
+      "seconds": 280.09300000000803,
+      "broker": {
+        "private_MiB": 62.5390625,
+        "working_set_MiB": 52.9296875,
+        "handles": 424,
+        "cpu_seconds": 5.359375
+      },
+      "host": {
+        "private_MiB": 2.015625,
+        "working_set_MiB": 12.1328125,
+        "handles": 149,
+        "cpu_seconds": 1.46875
+      }
+    },
+    {
+      "seconds": 290.0780000000086,
+      "broker": {
+        "private_MiB": 62.5390625,
+        "working_set_MiB": 52.9296875,
+        "handles": 424,
+        "cpu_seconds": 5.546875
+      },
+      "host": {
+        "private_MiB": 2.109375,
+        "working_set_MiB": 12.13671875,
+        "handles": 149,
+        "cpu_seconds": 1.53125
+      }
+    },
+    {
+      "seconds": 300.0310000000027,
+      "broker": {
+        "private_MiB": 62.5703125,
+        "working_set_MiB": 53.1171875,
+        "handles": 426,
+        "cpu_seconds": 5.734375
+      },
+      "host": {
+        "private_MiB": 2.171875,
+        "working_set_MiB": 12.3125,
+        "handles": 149,
+        "cpu_seconds": 1.578125
+      }
+    }
+  ],
+  "logical_processors": 16,
+  "monitors": [
+    [
+      2560,
+      -66,
+      5120,
+      1534
+    ],
+    [
+      0,
+      0,
+      2560,
+      1440
+    ]
+  ],
+  "scope": "Owned hidden native edit and broker, real Rime and Direct2D; no API calls or third-party host TSF automation. Sustained sample is not eight-hour endurance."
+}

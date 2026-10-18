@@ -1,0 +1,64 @@
+{
+  "duration_seconds": 300.04700000000594,
+  "interval_seconds": 299.7189999999973,
+  "logical_processors": 16,
+  "broker": {
+    "cpu_delta_seconds": 6.265625,
+    "cpu_machine_percent": 0.13065623550725963,
+    "cpu_one_core_percent": 2.090499768116154,
+    "private_MiB": {
+      "start": 61.296875,
+      "final": 61.46875,
+      "sampled_peak": 61.59765625,
+      "warm_min": 61.34375,
+      "warm_max": 61.59765625,
+      "warm_final_delta": -0.12890625
+    },
+    "working_set_MiB": {
+      "start": 48.4140625,
+      "final": 49.1015625,
+      "sampled_peak": 49.1015625,
+      "warm_min": 48.84375,
+      "warm_max": 49.1015625,
+      "warm_final_delta": 0.140625
+    },
+    "handles": {
+      "start": 424,
+      "final": 434,
+      "sampled_peak": 434,
+      "warm_min": 416,
+      "warm_max": 434,
+      "warm_final_delta": 13
+    }
+  },
+  "host": {
+    "cpu_delta_seconds": 2.515625,
+    "cpu_machine_percent": 0.05245798981712917,
+    "cpu_one_core_percent": 0.8393278370740668,
+    "private_MiB": {
+      "start": 2.11328125,
+      "final": 2.1875,
+      "sampled_peak": 2.203125,
+      "warm_min": 2.109375,
+      "warm_max": 2.203125,
+      "warm_final_delta": 0.078125
+    },
+    "working_set_MiB": {
+      "start": 12.15234375,
+      "final": 12.32421875,
+      "sampled_peak": 12.32421875,
+      "warm_min": 12.140625,
+      "warm_max": 12.32421875,
+      "warm_final_delta": 0.16015625
+    },
+    "handles": {
+      "start": 150,
+      "final": 149,
+      "sampled_peak": 151,
+      "warm_min": 149,
+      "warm_max": 151,
+      "warm_final_delta": -2
+    }
+  },
+  "combined_cpu_machine_percent": 0.1831142253243888
+}

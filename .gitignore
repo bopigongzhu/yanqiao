@@ -1,0 +1,10 @@
+.tools/
+build/
+dist/
+.cache/
+__pycache__/
+*.pyc
+*.user
+*.pdb
+*.dmp
+local.settings.json

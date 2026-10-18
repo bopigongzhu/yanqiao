@@ -1,0 +1,69 @@
+UpdateCTestConfiguration  from :D:/尝试/E_ShuRu/build/0.2.5/x64/DartConfiguration.tcl
+Test project D:/尝试/E_ShuRu/build/0.2.5/x64
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: panel_dpi
+
+1: Test command: D:\尝试\E_ShuRu\build\0.2.5\x64\bin\panel_tests.exe
+1: Working Directory: D:/尝试/E_ShuRu/build/0.2.5/x64/bin
+1: Test timeout computed to be: 30
+1: {"checks":52,"monitors":[{"dpi":144.0,"work":[2560,-66,5120,1534]},{"dpi":96.0,"work":[0,0,2560,1440]}],"result":"passed","scope":"Real hidden HWND rendering and clicks, synthetic DPI transitions plus attached monitors; no WeChat automation"}
+1/7 Test #1: panel_dpi ........................   Passed    0.53 sec
+test 2
+    Start 2: frequency
+
+2: Test command: D:\尝试\E_ShuRu\build\0.2.5\x64\bin\frequency_tests.exe
+2: Working Directory: D:/尝试/E_ShuRu/build/0.2.5/x64/bin
+2: Test timeout computed to be: 30
+2: {"capacity_entries":10000,"lookup_p95_ms":0.5396,"private_delta_MiB":1.3515625,"scope":"Synthetic worst-case same-reading table, includes save allocations; not host key latency"}
+2: {"checks":195,"result":"passed","scope":"real Rime identity and paging, pending span edits, DPAPI persistence, clear, restart and corruption"}
+2/7 Test #2: frequency ........................   Passed    0.50 sec
+test 3
+    Start 3: paging
+
+3: Test command: D:\尝试\E_ShuRu\build\0.2.5\x64\bin\paging_tests.exe
+3: Working Directory: D:/尝试/E_ShuRu/build/0.2.5/x64/bin
+3: Test timeout computed to be: 60
+3: {"checks":1706,"max_cached_bookmarks":4,"max_cached_pages":5,"max_cached_references":64,"max_cached_text_bytes":6,"page_operation_max_ms":0.0326,"page_operation_p95_ms":0.0206,"pages":154,"scope":"Real Rime baseline versus bounded personalized pagination; engine timings only, not host key-to-paint latency or whole-process memory."}
+3/7 Test #3: paging ...........................   Passed    0.07 sec
+test 4
+    Start 4: frequency_storage
+
+4: Test command: D:\尝试\E_ShuRu\build\0.2.5\x64\bin\frequency_storage_tests.exe
+4: Working Directory: D:/尝试/E_ShuRu/build/0.2.5/x64/bin
+4: Test timeout computed to be: 60
+4: {"checks":88,"result":"passed","scope":"Actual DPAPI, corrupted/missing snapshots, interrupted writes, Windows sharing failures, cleanup and concurrent background saves; own files only."}
+4/7 Test #4: frequency_storage ................   Passed    5.55 sec
+test 5
+    Start 5: core
+
+5: Test command: D:\尝试\E_ShuRu\build\0.2.5\x64\bin\core_tests.exe
+5: Working Directory: D:/尝试/E_ShuRu/build/0.2.5/x64/bin
+5: Test timeout computed to be: 10000000
+5: {"average_cycle_ms":0.092179,"checks":198,"cycles":200,"private_MiB":2.78125,"rime":"1.17.0","scope":"Unit-test process including real Rime, not whole installed IME","working_set_MiB":14.88671875}
+5/7 Test #5: core .............................   Passed    0.09 sec
+test 6
+    Start 6: tsf_lifecycle
+
+6: Test command: D:\尝试\E_ShuRu\build\0.2.5\x64\bin\tsf_smoke.exe
+6: Working Directory: D:/尝试/E_ShuRu/build/0.2.5/x64/bin
+6: Test timeout computed to be: 10000000
+6: {"pointer_bits":64,"scope":"Real Windows TSF activation in isolated secure test thread; no input profile registration","secure_activation":true,"unloads":true}
+6/7 Test #6: tsf_lifecycle ....................   Passed    0.07 sec
+test 7
+    Start 7: ipc_cancel
+
+7: Test command: D:\尝试\E_ShuRu\build\0.2.5\x64\bin\ipc_cancel_tests.exe
+7: Working Directory: D:/尝试/E_ShuRu/build/0.2.5/x64
+7: Test timeout computed to be: 15
+7: 32 stalled-peer cancellation cycles passed
+7/7 Test #7: ipc_cancel .......................   Passed    0.29 sec
+
+100% tests passed out of 7
+
+Total Test time (real) =   7.22 sec

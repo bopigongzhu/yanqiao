@@ -1,0 +1,28 @@
+{
+  "passed": 5,
+  "checks": [
+    "Panel follows parent window movement without another key",
+    "Scrolling out and back does not prematurely insert or lose selected draft",
+    "Active draft follows across attached monitors",
+    "Moved and scrolled draft commits once at original selection",
+    "Changed host selection cancels old draft"
+  ],
+  "requested_seconds": 0,
+  "samples": [],
+  "logical_processors": 16,
+  "monitors": [
+    [
+      2560,
+      -66,
+      5120,
+      1534
+    ],
+    [
+      0,
+      0,
+      2560,
+      1440
+    ]
+  ],
+  "scope": "Owned hidden native edit and broker, real Rime and Direct2D; no API calls or third-party host TSF automation. Sustained sample is not eight-hour endurance."
+}

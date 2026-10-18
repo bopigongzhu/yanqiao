@@ -1,0 +1,44 @@
+[
+  {
+    "name": "llvm-mingw",
+    "version": "20260922",
+    "url": "https://github.com/mstorsjo/llvm-mingw/releases/download/20260922/llvm-mingw-20260922-ucrt-x86_64.zip",
+    "sha256": "e3ad77d117a4bea19a7a3b333341824d79a5a371004a10e25b8504e7b3047666"
+  },
+  {
+    "name": "librime",
+    "version": "1.17.0",
+    "url": "https://github.com/rime/librime/releases/download/1.17.0/rime-33e7814-Windows-clang-x64.7z",
+    "sha256": "f850177bb2d256574348258f221730dbf3d358a53dbeca4bd49cdc338d927438"
+  },
+  {
+    "name": "rime_api.h",
+    "url": "https://raw.githubusercontent.com/rime/librime/33e7814/src/rime_api.h",
+    "sha256": "6eb5629162c44761e7b878f1b122f464de5c8685bd3cd5ac1e8519badc6d6424"
+  },
+  {
+    "name": "rime-LICENSE",
+    "url": "https://raw.githubusercontent.com/rime/librime/33e7814/LICENSE",
+    "sha256": "f67d27a6d2d586fcfed4b4c886a83747095396a39b6641e18e855086be2ec400"
+  },
+  {
+    "name": "json.hpp",
+    "url": "https://raw.githubusercontent.com/nlohmann/json/v3.12.0/single_include/nlohmann/json.hpp",
+    "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+  },
+  {
+    "name": "json-LICENSE",
+    "url": "https://raw.githubusercontent.com/nlohmann/json/v3.12.0/LICENSE.MIT",
+    "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+  },
+  {
+    "name": "pinyin-pinyin_simp.dict.yaml",
+    "url": "https://raw.githubusercontent.com/rime/rime-pinyin-simp/0c6861ef7420ee780270ca6d993d18d4101049d0/pinyin_simp.dict.yaml",
+    "sha256": "e341598343a0f0f2035bb1aafc34a7f3bb7887deeecb3f60796262aaa2983e6b"
+  },
+  {
+    "name": "pinyin-LICENSE",
+    "url": "https://raw.githubusercontent.com/rime/rime-pinyin-simp/0c6861ef7420ee780270ca6d993d18d4101049d0/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  }
+]

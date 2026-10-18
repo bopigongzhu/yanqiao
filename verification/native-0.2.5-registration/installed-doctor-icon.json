@@ -1,0 +1,16 @@
+﻿{
+  "active_is_eshuru": true,
+  "active_query_hr": 0,
+  "com_x64": {
+    "path": "C:\\Program Files\\EShuRu\\EShuRuTip-0.2.5.2.dll",
+    "registered": true
+  },
+  "com_x86": {
+    "path": "C:\\Program Files\\EShuRu\\x86\\EShuRuTip-0.2.5.2.dll",
+    "registered": true
+  },
+  "language_list": true,
+  "profile_enabled": true,
+  "scope": "Read-only per-user registration check; reads no API key or input content.",
+  "tip": "0804:{5DB324AE-9ED8-4E80-9BCE-8520DFFA3C93}{6ADE2191-955D-4BB3-BB54-8B9EE941FA20}"
+}

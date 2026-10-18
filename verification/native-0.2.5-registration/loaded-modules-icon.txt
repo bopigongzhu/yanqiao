@@ -1,0 +1,12 @@
+﻿
+Process             Id Module               
+-------             -- ------               
+EShuRu           10464 EShuRuTip-0.2.5.2.dll
+msedge           14924 EShuRuTip-0.2.5.2.dll
+DeepSeek Harness  6496 EShuRuTip-0.2.5.dll  
+explorer         10628 EShuRuTip-0.2.5.dll  
+WeChatAppEx      23060 EShuRuTip-0.2.5.dll  
+Weixin            3308 EShuRuTip-0.2.5.dll  
+
+
+

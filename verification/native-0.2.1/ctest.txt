@@ -1,0 +1,45 @@
+UpdateCTestConfiguration  from :D:/尝试/E_ShuRu/build/0.2.1/x64/DartConfiguration.tcl
+Test project D:/尝试/E_ShuRu/build/0.2.1/x64
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: frequency
+
+1: Test command: D:\尝试\E_ShuRu\build\0.2.1\x64\bin\frequency_tests.exe
+1: Working Directory: D:/尝试/E_ShuRu/build/0.2.1/x64/bin
+1: Test timeout computed to be: 30
+1: {"capacity_entries":10000,"lookup_p95_ms":2.3708,"private_delta_MiB":1.3125,"scope":"Synthetic worst-case same-reading table, includes save allocations; not host key latency"}
+1: {"checks":149,"result":"passed","scope":"real Rime identity and paging, pending span edits, DPAPI persistence, clear, restart and corruption"}
+1/4 Test #1: frequency ........................   Passed    1.27 sec
+test 2
+    Start 2: core
+
+2: Test command: D:\尝试\E_ShuRu\build\0.2.1\x64\bin\core_tests.exe
+2: Working Directory: D:/尝试/E_ShuRu/build/0.2.1/x64/bin
+2: Test timeout computed to be: 10000000
+2: {"average_cycle_ms":0.0920365,"checks":198,"cycles":200,"private_MiB":2.72265625,"rime":"1.17.0","scope":"Unit-test process including real Rime, not whole installed IME","working_set_MiB":14.078125}
+2/4 Test #2: core .............................   Passed    0.06 sec
+test 3
+    Start 3: tsf_lifecycle
+
+3: Test command: D:\尝试\E_ShuRu\build\0.2.1\x64\bin\tsf_smoke.exe
+3: Working Directory: D:/尝试/E_ShuRu/build/0.2.1/x64/bin
+3: Test timeout computed to be: 10000000
+3: {"pointer_bits":64,"scope":"Real Windows TSF activation in isolated secure test thread; no input profile registration","secure_activation":true,"unloads":true}
+3/4 Test #3: tsf_lifecycle ....................   Passed    0.03 sec
+test 4
+    Start 4: ipc_cancel
+
+4: Test command: D:\尝试\E_ShuRu\build\0.2.1\x64\bin\ipc_cancel_tests.exe
+4: Working Directory: D:/尝试/E_ShuRu/build/0.2.1/x64
+4: Test timeout computed to be: 15
+4: 32 stalled-peer cancellation cycles passed
+4/4 Test #4: ipc_cancel .......................   Passed    0.26 sec
+
+100% tests passed out of 4
+
+Total Test time (real) =   1.63 sec

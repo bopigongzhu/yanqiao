@@ -1,0 +1,11 @@
+{
+  "passed": 5,
+  "checks": [
+    "Real pinyin selection stays in sentence buffer",
+    "Chinese sentence enters native edit control",
+    "Second sentence appends exactly once at caret",
+    "Escape cancels uncommitted pinyin",
+    "Shift toggles English direct input"
+  ],
+  "scope": "Owned hidden sandbox with real shared Rime. Foreground requirement intentionally bypassed in headless test only. No system registration or API calls."
+}

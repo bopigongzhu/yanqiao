@@ -1,0 +1,53 @@
+UpdateCTestConfiguration  from :D:/尝试/E_ShuRu/build/0.2.3/x64/DartConfiguration.tcl
+Test project D:/尝试/E_ShuRu/build/0.2.3/x64
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: panel_dpi
+
+1: Test command: D:\尝试\E_ShuRu\build\0.2.3\x64\bin\panel_tests.exe
+1: Working Directory: D:/尝试/E_ShuRu/build/0.2.3/x64/bin
+1: Test timeout computed to be: 30
+1: {"checks":52,"monitors":[{"dpi":144.0,"work":[2560,-66,5120,1534]},{"dpi":96.0,"work":[0,0,2560,1440]}],"result":"passed","scope":"Real hidden HWND rendering and clicks, synthetic DPI transitions plus attached monitors; no WeChat automation"}
+1/5 Test #1: panel_dpi ........................   Passed    0.50 sec
+test 2
+    Start 2: frequency
+
+2: Test command: D:\尝试\E_ShuRu\build\0.2.3\x64\bin\frequency_tests.exe
+2: Working Directory: D:/尝试/E_ShuRu/build/0.2.3/x64/bin
+2: Test timeout computed to be: 30
+2: {"capacity_entries":10000,"lookup_p95_ms":2.3177,"private_delta_MiB":1.3125,"scope":"Synthetic worst-case same-reading table, includes save allocations; not host key latency"}
+2: {"checks":149,"result":"passed","scope":"real Rime identity and paging, pending span edits, DPAPI persistence, clear, restart and corruption"}
+2/5 Test #2: frequency ........................   Passed    1.28 sec
+test 3
+    Start 3: core
+
+3: Test command: D:\尝试\E_ShuRu\build\0.2.3\x64\bin\core_tests.exe
+3: Working Directory: D:/尝试/E_ShuRu/build/0.2.3/x64/bin
+3: Test timeout computed to be: 10000000
+3: {"average_cycle_ms":0.094163,"checks":198,"cycles":200,"private_MiB":2.76171875,"rime":"1.17.0","scope":"Unit-test process including real Rime, not whole installed IME","working_set_MiB":14.09375}
+3/5 Test #3: core .............................   Passed    0.06 sec
+test 4
+    Start 4: tsf_lifecycle
+
+4: Test command: D:\尝试\E_ShuRu\build\0.2.3\x64\bin\tsf_smoke.exe
+4: Working Directory: D:/尝试/E_ShuRu/build/0.2.3/x64/bin
+4: Test timeout computed to be: 10000000
+4: {"pointer_bits":64,"scope":"Real Windows TSF activation in isolated secure test thread; no input profile registration","secure_activation":true,"unloads":true}
+4/5 Test #4: tsf_lifecycle ....................   Passed    0.03 sec
+test 5
+    Start 5: ipc_cancel
+
+5: Test command: D:\尝试\E_ShuRu\build\0.2.3\x64\bin\ipc_cancel_tests.exe
+5: Working Directory: D:/尝试/E_ShuRu/build/0.2.3/x64
+5: Test timeout computed to be: 15
+5: 32 stalled-peer cancellation cycles passed
+5/5 Test #5: ipc_cancel .......................   Passed    0.24 sec
+
+100% tests passed out of 5
+
+Total Test time (real) =   2.12 sec

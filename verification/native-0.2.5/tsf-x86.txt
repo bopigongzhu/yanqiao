@@ -1,0 +1,1 @@
+{"pointer_bits":32,"scope":"Real Windows TSF activation in isolated secure test thread; no input profile registration","secure_activation":true,"unloads":true}

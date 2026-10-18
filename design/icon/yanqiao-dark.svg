@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2D6F58"/>
+      <stop offset="1" stop-color="#184133"/>
+    </linearGradient>
+  </defs>
+  <!-- High-contrast dark alternate for dark taskbars / tray. -->
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#tile)"/>
+  <rect x="40" y="188" width="176" height="11" rx="5.5" fill="#9AD6B8"/>
+  <path d="M 56 74 L 128 150 L 200 74"
+        fill="none" stroke="#F7F5EE" stroke-width="33"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="112" y="146" width="32" height="44" rx="16" fill="#F7F5EE"/>
+</svg>

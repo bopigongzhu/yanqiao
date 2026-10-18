@@ -1,0 +1,407 @@
+{
+  "binary": "D:\\\u5c1d\u8bd5\\E_ShuRu\\build\\0.2.5\\x64\\bin\\EShuRu.exe",
+  "binary_sha256": "37bfc83b252604ac86be43d8c68c5a2e1d18b32ff40fbaafad67042a90640836",
+  "rounds": 3,
+  "pages": 154,
+  "operations": 924,
+  "page_sequence_sha256": "6a86bb2a2b1f8aefd90a616c2e0fcf5de07e4b53600057feaa21caf7cd8ed062",
+  "ipc_operation_p95_ms": 1.17859999591019,
+  "ipc_operation_max_ms": 3.0420999974012375,
+  "logical_processors": 16,
+  "sample_seconds": 1.4689999999973224,
+  "cpu_machine_percent": 0.731258509191258,
+  "sampled_peak_private_MiB": 4.7578125,
+  "samples": [
+    {
+      "seconds": 0.0,
+      "round": 0,
+      "direction": "first",
+      "page": 0,
+      "private_MiB": 4.21875,
+      "working_set_MiB": 19.03125,
+      "handles": 239,
+      "cpu_seconds": 0.046875
+    },
+    {
+      "seconds": 0.0,
+      "round": 0,
+      "direction": "forward",
+      "page": 0,
+      "private_MiB": 4.21875,
+      "working_set_MiB": 19.03125,
+      "handles": 239,
+      "cpu_seconds": 0.046875
+    },
+    {
+      "seconds": 0.031000000002677552,
+      "round": 0,
+      "direction": "forward",
+      "page": 32,
+      "private_MiB": 4.31640625,
+      "working_set_MiB": 19.1953125,
+      "handles": 239,
+      "cpu_seconds": 0.0625
+    },
+    {
+      "seconds": 0.07799999999406282,
+      "round": 0,
+      "direction": "forward",
+      "page": 64,
+      "private_MiB": 4.453125,
+      "working_set_MiB": 19.32421875,
+      "handles": 239,
+      "cpu_seconds": 0.109375
+    },
+    {
+      "seconds": 0.11000000000058208,
+      "round": 0,
+      "direction": "forward",
+      "page": 96,
+      "private_MiB": 4.546875,
+      "working_set_MiB": 19.421875,
+      "handles": 239,
+      "cpu_seconds": 0.125
+    },
+    {
+      "seconds": 0.14100000000325963,
+      "round": 0,
+      "direction": "forward",
+      "page": 128,
+      "private_MiB": 4.66796875,
+      "working_set_MiB": 19.546875,
+      "handles": 239,
+      "cpu_seconds": 0.140625
+    },
+    {
+      "seconds": 0.17200000000593718,
+      "round": 0,
+      "direction": "forward",
+      "page": 153,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.6171875,
+      "handles": 239,
+      "cpu_seconds": 0.140625
+    },
+    {
+      "seconds": 0.20299999999406282,
+      "round": 0,
+      "direction": "backward",
+      "page": 128,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.140625
+    },
+    {
+      "seconds": 0.23500000000058208,
+      "round": 0,
+      "direction": "backward",
+      "page": 96,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.15625
+    },
+    {
+      "seconds": 0.26600000000325963,
+      "round": 0,
+      "direction": "backward",
+      "page": 64,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.15625
+    },
+    {
+      "seconds": 0.2970000000059372,
+      "round": 0,
+      "direction": "backward",
+      "page": 32,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.15625
+    },
+    {
+      "seconds": 0.34399999999732245,
+      "round": 0,
+      "direction": "backward",
+      "page": 0,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.15625
+    },
+    {
+      "seconds": 0.4850000000005821,
+      "round": 0,
+      "direction": "idle",
+      "page": 0,
+      "private_MiB": 4.57421875,
+      "working_set_MiB": 19.34765625,
+      "handles": 239,
+      "cpu_seconds": 0.15625
+    },
+    {
+      "seconds": 0.4850000000005821,
+      "round": 1,
+      "direction": "first",
+      "page": 0,
+      "private_MiB": 4.58984375,
+      "working_set_MiB": 19.35546875,
+      "handles": 239,
+      "cpu_seconds": 0.15625
+    },
+    {
+      "seconds": 0.4850000000005821,
+      "round": 1,
+      "direction": "forward",
+      "page": 0,
+      "private_MiB": 4.58984375,
+      "working_set_MiB": 19.35546875,
+      "handles": 239,
+      "cpu_seconds": 0.15625
+    },
+    {
+      "seconds": 0.5310000000026776,
+      "round": 1,
+      "direction": "forward",
+      "page": 32,
+      "private_MiB": 4.6328125,
+      "working_set_MiB": 19.38671875,
+      "handles": 239,
+      "cpu_seconds": 0.171875
+    },
+    {
+      "seconds": 0.5629999999946449,
+      "round": 1,
+      "direction": "forward",
+      "page": 64,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.46484375,
+      "handles": 239,
+      "cpu_seconds": 0.171875
+    },
+    {
+      "seconds": 0.5939999999973224,
+      "round": 1,
+      "direction": "forward",
+      "page": 96,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.51953125,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 0.625,
+      "round": 1,
+      "direction": "forward",
+      "page": 128,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.6015625,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 0.6560000000026776,
+      "round": 1,
+      "direction": "forward",
+      "page": 153,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 0.6879999999946449,
+      "round": 1,
+      "direction": "backward",
+      "page": 128,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 0.7189999999973224,
+      "round": 1,
+      "direction": "backward",
+      "page": 96,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 0.75,
+      "round": 1,
+      "direction": "backward",
+      "page": 64,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 0.7970000000059372,
+      "round": 1,
+      "direction": "backward",
+      "page": 32,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 0.8279999999940628,
+      "round": 1,
+      "direction": "backward",
+      "page": 0,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.62109375,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 0.9850000000005821,
+      "round": 1,
+      "direction": "idle",
+      "page": 0,
+      "private_MiB": 4.52734375,
+      "working_set_MiB": 19.359375,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 0.9850000000005821,
+      "round": 2,
+      "direction": "first",
+      "page": 0,
+      "private_MiB": 4.5390625,
+      "working_set_MiB": 19.3671875,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 0.9850000000005821,
+      "round": 2,
+      "direction": "forward",
+      "page": 0,
+      "private_MiB": 4.5390625,
+      "working_set_MiB": 19.3671875,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 1.0160000000032596,
+      "round": 2,
+      "direction": "forward",
+      "page": 32,
+      "private_MiB": 4.61328125,
+      "working_set_MiB": 19.42578125,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 1.0470000000059372,
+      "round": 2,
+      "direction": "forward",
+      "page": 64,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.52734375,
+      "handles": 239,
+      "cpu_seconds": 0.1875
+    },
+    {
+      "seconds": 1.0779999999940628,
+      "round": 2,
+      "direction": "forward",
+      "page": 96,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.56640625,
+      "handles": 239,
+      "cpu_seconds": 0.203125
+    },
+    {
+      "seconds": 1.125,
+      "round": 2,
+      "direction": "forward",
+      "page": 128,
+      "private_MiB": 4.73046875,
+      "working_set_MiB": 19.6015625,
+      "handles": 239,
+      "cpu_seconds": 0.203125
+    },
+    {
+      "seconds": 1.1410000000032596,
+      "round": 2,
+      "direction": "forward",
+      "page": 153,
+      "private_MiB": 4.7578125,
+      "working_set_MiB": 19.65234375,
+      "handles": 239,
+      "cpu_seconds": 0.203125
+    },
+    {
+      "seconds": 1.1720000000059372,
+      "round": 2,
+      "direction": "backward",
+      "page": 128,
+      "private_MiB": 4.7578125,
+      "working_set_MiB": 19.65234375,
+      "handles": 239,
+      "cpu_seconds": 0.203125
+    },
+    {
+      "seconds": 1.2029999999940628,
+      "round": 2,
+      "direction": "backward",
+      "page": 96,
+      "private_MiB": 4.7578125,
+      "working_set_MiB": 19.65234375,
+      "handles": 239,
+      "cpu_seconds": 0.203125
+    },
+    {
+      "seconds": 1.25,
+      "round": 2,
+      "direction": "backward",
+      "page": 64,
+      "private_MiB": 4.7578125,
+      "working_set_MiB": 19.65234375,
+      "handles": 239,
+      "cpu_seconds": 0.21875
+    },
+    {
+      "seconds": 1.2810000000026776,
+      "round": 2,
+      "direction": "backward",
+      "page": 32,
+      "private_MiB": 4.7578125,
+      "working_set_MiB": 19.65234375,
+      "handles": 239,
+      "cpu_seconds": 0.21875
+    },
+    {
+      "seconds": 1.312999999994645,
+      "round": 2,
+      "direction": "backward",
+      "page": 0,
+      "private_MiB": 4.7578125,
+      "working_set_MiB": 19.65234375,
+      "handles": 239,
+      "cpu_seconds": 0.21875
+    },
+    {
+      "seconds": 1.4689999999973224,
+      "round": 2,
+      "direction": "idle",
+      "page": 0,
+      "private_MiB": 4.578125,
+      "working_set_MiB": 19.39453125,
+      "handles": 239,
+      "cpu_seconds": 0.21875
+    }
+  ],
+  "scope": "One owned headless broker, empty isolated frequency, 3 forward/backward traversals of s; no painting, real host TSF or cloud. IPC timings include Python polling and are not key-to-paint latency."
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-05",
+  "browser": "Microsoft Edge headless / Playwright",
+  "checks": [
+    "Initial English is available",
+    "Explanation has three focused items",
+    "Keyboard can close explanation",
+    "English commit inserts correct text",
+    "Commit clears draft and explanation",
+    "Pending pinyin blocks English commit",
+    "Selecting a word does not commit to host",
+    "Pinyin word goes into sentence buffer",
+    "Continuous updates settle on a current result",
+    "Continuous update final result matches final source",
+    "Editing immediately invalidates the old English result",
+    "Unknown text is not given a fake translation",
+    "Late response cannot restore cleared draft",
+    "Offline preserves Chinese input and disables English",
+    "Chinese commits during API failure",
+    "Invalid key disables translation only",
+    "Explanation error does not block English",
+    "Explanation retry restores items",
+    "Prototype refuses real API credentials",
+    "Connection simulation returns control",
+    "Dark theme applied",
+    "Compact panel uses 440px width",
+    "No horizontal overflow at 1000",
+    "No horizontal overflow at 820",
+    "No horizontal overflow at 390",
+    "No browser runtime errors",
+    "No external network calls"
+  ],
+  "errors": [],
+  "remote": [],
+  "scope": "Offline prototype only. No native IME or API resource measurements.",
+  "visualReview": {
+    "screenshots": 9,
+    "animations": "disabled for capture",
+    "finalRuntimeErrors": [],
+    "narrowOverflow": false
+  }
+}

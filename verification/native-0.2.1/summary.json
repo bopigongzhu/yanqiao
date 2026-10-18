@@ -1,0 +1,58 @@
+{
+  "tested_at": "2026-10-07T23:04:26.728928+08:00",
+  "results": [
+    {
+      "name": "installer-diagnosis",
+      "exit_code": 0
+    },
+    {
+      "name": "ctest",
+      "exit_code": 0
+    },
+    {
+      "name": "tsf-x86",
+      "exit_code": 0
+    },
+    {
+      "name": "integration",
+      "exit_code": 0
+    },
+    {
+      "name": "native-ui",
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "src/ai.cpp": "d32977ed52a5d60c419c02e95d482ca252b3c20a2e014f3ba9857cefbc59cc65",
+    "src/ai.hpp": "b7b64c7f9e2494a43df4fddc0132bc3cd6d1a4eecf4c668719845b7de469744e",
+    "src/app.cpp": "c19246e0a6f15a9f873e7df6816d098b388bb2f757312535013ff76a7f4d5417",
+    "src/app.hpp": "9b8908a3eb599342d4f438b744f83ecda2f0f5c43f50ccba013847d419c2d34a",
+    "src/common.cpp": "9aaf74d4b1d9d8ddd2ecdb1f9de6acfbb2c8f26400356fd7e9980202a9b6124b",
+    "src/common.hpp": "39de6cf258856c5ecba6b1a75066bca04017dab1742c4b09d3180e7240f543e9",
+    "src/core.cpp": "49b4adf0da78a57b377d6056d30a541a21fcd27a1305c7d80e90d172b7e8bad0",
+    "src/core.hpp": "5cf36c47cb7c541f59adc650d9b171629cfb3f66dae06b60ec163ad05031fff4",
+    "src/frequency.cpp": "fddd579d450988fa0e7270408dc814c90fd6da5ba9b96b8d27bb5680be241126",
+    "src/frequency.hpp": "6450fa286679b27db80ea7c0f4c5fd8914e260b33a8d68d99c982987b380da28",
+    "src/ipc.cpp": "b5edf1b2ecf90c8d5ffe832c2d465470e54230f6b342b78362ed621d50d769ae",
+    "src/ipc.hpp": "eaaa8be454ccf32e04f94557bce6485a1ab9e856f4192ee6ed785b19129f00f1",
+    "src/main.cpp": "3eca95819bd27a92ff1b2bff04b0cdd110ff38e7a9111e986d2b978edd93cb61",
+    "src/panel.cpp": "b1d0742f0c14908fdc6124dcf151f90368fce1bd7c703e68123bdef8ca581cec",
+    "src/panel.hpp": "8d8c9bc14491b9e92339b940ab621086555ebb34c8972e974035521f560b5c72",
+    "src/rime_engine.cpp": "ac65456b4903bc5eb3c7454c9d1733b2e1bf5dde727b16157614e039a7c4d907",
+    "src/rime_engine.hpp": "7f8256a97b74bb5e45f6cc6594208302e0f403a09c6024e19ee1ce41bee74637",
+    "src/sandbox.cpp": "c0d243af12b38fb0a1fecdd16da7d8dc377758b17b75deed8ef209e0f511fc4a",
+    "src/sandbox.hpp": "b5b99e451a08123e0346d4f5dcec705e1a3328d8ecda798e743a8c520d9cc5cd",
+    "src/tsf.cpp": "3d7ea90861450634b77eec34dff4c15ddfb3d7e683076c6f301dbb9c473e3da2",
+    "src/tsf.def": "e223b1d351c6df15e5774404a96acf72d112b406302c6bb402a3035aaf928d39",
+    "tests/api_probe.cpp": "a38a3ad6774d4d8038cc6f6b53db681846efdc0313d7a3e2913c38bbf0cd8c01",
+    "tests/core_tests.cpp": "5c0d0a09212d5757aed9a2fd6ea0a0e14ddba378fe20ea03f4889c830fff85ac",
+    "tests/frequency_tests.cpp": "0ece92b9eb6e2e78264867bd9cd4f61a01e36a9ae4052375e5ff7e9b1d6d38cd",
+    "tests/integration_tests.cpp": "ebee9a730ad9f06497f02fd3bed2d58642fa292492bfdfb3d127a69472e9bd11",
+    "tests/ipc_cancel_tests.cpp": "41173d9fb2b4908e5c6a60156ba5f79c7645e485ba3f4588d908e9a1c7f2c34e",
+    "tests/tsf_smoke.cpp": "c9f76fbdef43a0ac28fdccd8f6c575b94a432e83c3b6ef8866b208570e9e75bd",
+    "data/default.yaml": "3793c3dada7a6a80fbd19a0ffc7bd22a0a3ba995c176d486253afadf848e7155",
+    "data/e_shuru.schema.yaml": "67fcf21d241902ad5ca5a83e975c8a05cdcbc15271d9317877e5fc34892dd716",
+    "data/pinyin_simp.dict.yaml": "e341598343a0f0f2035bb1aafc34a7f3bb7887deeecb3f60796262aaa2983e6b"
+  },
+  "scope": "Local real-Rime core, IPC, sandbox and isolated secure TSF lifecycle. No system registration, installed-app compatibility, cloud latency or endurance acceptance."
+}

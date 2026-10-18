@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>言桥 · E_ShuRu — 输入法界面原型</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-logo" viewBox="0 0 24 24"><path d="M5 6h14M5 12h10M5 18h6"/><path d="m15 15 4 3-4 3"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6v15M3 4c3-1 6 0 9 2 3-2 6-3 9-2v15c-3-1-6 0-9 2-3-2-6-3-9-2Z"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-return" viewBox="0 0 24 24"><path d="M20 5v9H5m5-5-5 5 5 5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14A8 8 0 0 1 10 4a8 8 0 1 0 10 10Z"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m12 3 10 18H2ZM12 9v5m0 3v.1"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></symbol>
+  </defs></svg>
+
+  <div class="design-shell">
+    <header class="page-header">
+      <a class="wordmark" href="../README.md" title="打开开发文档索引"><span class="brand-icon"><svg><use href="#i-logo"/></svg></span><span>言桥 <small>E_SHURU</small></span></a>
+      <div class="header-right"><span class="header-label">WINDOWS 11 · DESIGN 01</span><button class="icon-button" id="themeToggle" type="button" aria-label="切换深浅色主题"><svg><use href="#i-moon"/></svg></button></div>
+    </header>
+
+    <section class="intro">
+      <div><div class="eyebrow"><span class="short-line"></span> 从想说，到会说</div><h1>用中文想，<span>用英语自然表达。</span></h1><p>一个熟悉的全拼输入法，多一层恰到好处的理解。</p></div>
+      <div class="prototype-label"><span class="status-dot"></span><div>离线交互原型<small>内置例句演示 · 无真实 API 调用</small></div></div>
+    </section>
+
+    <main class="workbench">
+      <aside class="rail" aria-label="原型场景导航">
+        <div class="rail-caption">界面预览 <span>01 — 04</span></div>
+        <nav class="scene-nav">
+          <button type="button" class="scene-button active" data-scene="input" aria-pressed="true"><svg><use href="#i-spark"/></svg><span>输入与翻译<small>一句中文，一种表达</small></span><span class="nav-number">01</span></button>
+          <button type="button" class="scene-button" data-scene="learn" aria-pressed="false"><svg><use href="#i-book"/></svg><span>词句讲解<small>懂意思，也懂用法</small></span><span class="nav-number">02</span></button>
+          <button type="button" class="scene-button" data-scene="errors" aria-pressed="false"><svg><use href="#i-alert"/></svg><span>异常状态<small>中文输入始终可用</small></span><span class="nav-number">03</span></button>
+          <button type="button" class="scene-button" data-scene="settings" aria-pressed="false"><svg><use href="#i-settings"/></svg><span>连接与外观<small>自己的服务，自己的习惯</small></span><span class="nav-number">04</span></button>
+        </nav>
+        <div class="rail-divider"></div>
+        <div class="rail-caption">试着表达</div>
+        <div class="example-list">
+          <button type="button" data-example="tired" class="example-button selected"><span>01</span> 今天有点累 <svg><use href="#i-arrow"/></svg></button>
+          <button type="button" data-example="raincheck" class="example-button"><span>02</span> 改天再约 <svg><use href="#i-arrow"/></svg></button>
+          <button type="button" data-example="reply" class="example-button"><span>03</span> 不着急回复 <svg><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="rail-note"><svg><use href="#i-grid"/></svg><p>左侧导航仅用于设计预览。<br>实际使用时，输入面板跟随光标出现。</p></div>
+      </aside>
+
+      <section class="preview-column" aria-label="界面演示区域">
+        <div class="preview-toolbar"><div><span class="status-dot muted-dot"></span><span id="sceneTitle">输入与翻译</span><span class="toolbar-separator">/</span><span class="toolbar-secondary" id="sceneSubtitle">浮动输入面板</span></div><span class="scale-note">1× 设计预览</span></div>
+        <div class="scenario-controls" id="scenarioControls">
+          <button type="button" class="chip active" data-state="ready">翻译就绪</button>
+          <button type="button" class="chip" data-state="pinyin">拼音选字</button>
+          <button type="button" class="chip" data-state="streaming">持续更新</button>
+          <span class="controls-note">可直接修改中文，或点击示例句</span>
+        </div>
+
+        <div class="stage" id="stage">
+          <section class="host-window" id="hostWindow" aria-label="模拟目标软件">
+            <div class="host-titlebar"><div><span class="notepad-icon"></span>口语练习.txt <span>— 记事本</span></div><div class="window-controls" aria-hidden="true"><span>−</span><span>□</span><span>×</span></div></div>
+            <div class="host-menubar">文件 <span>编辑</span><span>查看</span></div>
+            <div class="host-document">
+              <p class="document-prompt">今天，有什么想说的？</p>
+              <div class="target-content" id="targetContent" role="textbox" aria-label="模拟目标文本框" aria-readonly="true"><span id="targetText"></span><span class="text-caret" aria-hidden="true"></span></div>
+
+              <section class="ime-panel" id="imePanel" aria-label="言桥输入面板">
+                <header class="ime-header"><div class="ime-brand"><span class="mini-brand"><svg><use href="#i-logo"/></svg></span><strong>言桥</strong><span class="ime-divider"></span><span class="input-mode">中 · 全拼</span></div><div class="ime-header-right"><span class="connection-state" id="connectionState"><span class="status-dot"></span>已连接</span><button class="icon-button small" id="openSettings" aria-label="打开输入法设置" type="button"><svg><use href="#i-settings"/></svg></button></div></header>
+                <div class="source-section"><div class="section-label"><label for="sentenceInput">中文 <span>· 句子编辑区</span></label><span id="charCount">17 / 300</span></div><textarea id="sentenceInput" rows="2" maxlength="600" spellcheck="false" aria-describedby="sourceHint">我今天累坏了，想早点睡。</textarea><span class="sr-only" id="sourceHint">中文先保留在输入法内，点击输入中文或输入英文后才加入模拟目标文本框。原型仅支持内置例句的模拟翻译。</span>
+                  <div class="pinyin-row" id="pinyinRow" hidden><span class="pinyin-text">shui<span class="pinyin-caret"></span></span><div class="candidate-list" id="candidateList"><button type="button" data-candidate="睡" class="candidate chosen"><span>1</span>睡</button><button type="button" data-candidate="水" class="candidate"><span>2</span>水</button><button type="button" data-candidate="税" class="candidate"><span>3</span>税</button><button type="button" data-candidate="谁" class="candidate"><span>4</span>谁</button></div></div>
+                </div>
+
+                <div class="translation-section"><div class="section-label"><span class="english-label"><svg><use href="#i-spark"/></svg>ENGLISH</span><span class="translation-status" id="translationStatus" role="status">就绪</span></div><p class="english-result" id="englishResult" lang="en">I'm beat. I think I'll turn in early tonight.</p><div class="error-actions" id="errorActions" hidden><button type="button" class="text-action" id="retryTranslation">重新尝试 <svg><use href="#i-arrow"/></svg></button></div>
+                  <button type="button" class="learn-toggle" id="learnToggle" aria-expanded="false" aria-controls="explanationPanel"><svg><use href="#i-book"/></svg><span>词句讲解</span><svg class="chevron"><use href="#i-chevron"/></svg><kbd>Ctrl J</kbd></button>
+                  <div class="explanation-panel" id="explanationPanel" hidden><div class="explanation-heading"><span>把这句，变成自己的表达。</span><span class="small-tag">3 个重点</span></div><div id="explanationContent"></div></div>
+                </div>
+                <div class="inline-notice" id="inlineNotice" role="status" hidden></div>
+                <footer class="ime-footer"><button type="button" class="button secondary" id="commitChinese"><span>输入中文</span><kbd>Enter</kbd></button><button type="button" class="button primary" id="commitEnglish"><span>输入英文</span><kbd>Ctrl Enter</kbd><svg><use href="#i-return"/></svg></button></footer>
+              </section>
+
+              <div class="commit-success" id="commitSuccess" hidden><span class="success-icon"><svg><use href="#i-check"/></svg></span><div><strong>已输入到当前文本框</strong><p>这句话的草稿和讲解已清空。</p></div><button type="button" class="text-action" id="startAgain">再试一句 <svg><use href="#i-arrow"/></svg></button></div>
+            </div>
+            <div class="host-statusbar"><span>模拟文本框 · 仅插入，不发送</span><span>UTF-8 <span class="statusbar-gap">100%</span></span></div>
+          </section>
+
+          <section class="settings-window" id="settingsWindow" aria-label="输入法设置预览" hidden>
+            <header class="settings-titlebar"><span><span class="mini-brand"><svg><use href="#i-logo"/></svg></span>言桥设置</span><button type="button" class="icon-button" id="closeSettings" aria-label="关闭设置预览"><svg><use href="#i-close"/></svg></button></header>
+            <div class="settings-body"><div class="settings-heading"><div class="eyebrow">MAKE IT YOURS</div><h2>随你的习惯。</h2><p>连接翻译服务，调整一个舒服的输入界面。</p></div>
+              <section class="setting-group"><div class="setting-group-heading"><h3>翻译服务</h3><span class="service-tag"><span class="status-dot"></span>DeepSeek</span></div><label class="field-label" for="apiKey">个人 API Key</label><div class="key-field"><input type="password" id="apiKey" disabled placeholder="正式客户端中填写你自己的 API Key" aria-describedby="keyHint"><span>演示</span></div><p class="field-hint" id="keyHint">各自配置、各自付费。此原型不接收真实密钥。</p><div class="connection-test"><button type="button" class="button secondary compact-button" id="testConnection">测试连接</button><span id="testStatus" role="status">此处仅演示连接流程</span></div></section>
+              <section class="setting-group"><div class="setting-row"><div><h3>外观主题</h3><p>让面板融入你的桌面</p></div><div class="segmented-control" aria-label="主题"><button type="button" data-theme-choice="system" class="selected" aria-pressed="true">跟随系统</button><button type="button" data-theme-choice="light" aria-pressed="false">浅色</button><button type="button" data-theme-choice="dark" aria-pressed="false">深色</button></div></div><div class="setting-row"><div><h3>面板布局</h3><p>相同内容，更合适的宽度</p></div><div class="segmented-control" aria-label="面板布局"><button type="button" class="selected" data-density="standard" aria-pressed="true">标准</button><button type="button" data-density="compact" aria-pressed="false">紧凑</button></div></div></section>
+              <section class="shortcut-group"><div><span>输入中文</span><kbd>Enter</kbd></div><div><span>输入英文</span><kbd>Ctrl Enter</kbd></div><div><span>词句讲解</span><kbd>Ctrl J</kbd></div></section>
+              <div class="settings-bottom"><span>不保存句子、翻译或讲解。</span><button type="button" class="button primary compact-button" id="saveSettings">保存设置</button></div><p class="settings-notice" id="settingsNotice" role="status"></p>
+            </div>
+          </section>
+        </div>
+
+        <div class="design-notes"><div><span class="note-number">01</span><p><strong id="noteTitle">先组织，再表达</strong><span id="noteBody">中文留在编辑区，选定后再输入到当前软件。</span></p></div><div><span class="note-number">02</span><p><strong>讲解按需出现</strong><span>只解释这一句，不保存记录，也不增加学习负担。</span></p></div></div>
+      </section>
+    </main>
+    <footer class="page-footer"><span>言桥 / E_ShuRu <span class="footer-dash">—</span> 产品与界面方案 v0.1</span><span>全拼输入 · 单条英文 · 按需讲解</span><a href="../docs/02-交互与视觉设计.md">查看设计规范 <svg><use href="#i-arrow"/></svg></a></footer>
+  </div>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

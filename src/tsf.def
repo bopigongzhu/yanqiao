@@ -1,0 +1,6 @@
+LIBRARY EShuRuTip
+EXPORTS
+    DllGetClassObject
+    DllCanUnloadNow
+    DllRegisterServer
+    DllUnregisterServer

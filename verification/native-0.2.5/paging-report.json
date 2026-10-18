@@ -1,0 +1,11 @@
+{
+  "checks": 1706,
+  "max_cached_bookmarks": 4,
+  "max_cached_pages": 5,
+  "max_cached_references": 64,
+  "max_cached_text_bytes": 6,
+  "page_operation_max_ms": 0.0326,
+  "page_operation_p95_ms": 0.0206,
+  "pages": 154,
+  "scope": "Real Rime baseline versus bounded personalized pagination; engine timings only, not host key-to-paint latency or whole-process memory."
+}

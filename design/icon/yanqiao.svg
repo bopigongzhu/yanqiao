@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBFAF5"/>
+      <stop offset="1" stop-color="#EFECE2"/>
+    </linearGradient>
+  </defs>
+  <!-- Warm ivory tile, like the panel surface. -->
+  <rect x="8" y="8" width="240" height="240" rx="58"
+        fill="url(#tile)" stroke="#1D302B" stroke-opacity="0.12" stroke-width="1.5"/>
+  <!-- Bridge deck: mint, wider than the tower. -->
+  <rect x="40" y="188" width="176" height="11" rx="5.5" fill="#4F9B7A"/>
+  <!-- Y = YanQiao initial / cable-stayed tower and two cables. -->
+  <path d="M 56 74 L 128 150 L 200 74"
+        fill="none" stroke="#1F4D3F" stroke-width="33"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="112" y="146" width="32" height="44" rx="16" fill="#1F4D3F"/>
+</svg>

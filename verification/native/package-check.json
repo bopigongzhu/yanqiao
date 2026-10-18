@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-06T00:24:40.242984+08:00",
+  "zip_sha256": "830584e51a4db7c4a208f703110254a649fbde143ac18a6af72d2bd72118872d",
+  "zip_bytes": 5553624,
+  "manifest_files": 38,
+  "integrity": "passed",
+  "native_ui_checks": 5,
+  "native_ui_report": "package-ui.json",
+  "system_registration": "not run",
+  "live_api": "not run"
+}
