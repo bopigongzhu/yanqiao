@@ -23,7 +23,7 @@ Windows 11 全拼输入法：把想说的中文变成自然英文，随时展开
 
 未配置 Key 时，可以完整试用本地中文路径。试用窗口使用真实引擎与进程通信，系统全局输入需要另行注册。详见 [开发进度与运行说明](docs/08-开发进度与运行说明.md)。
 
-精简本地开发包：[EShuRu-0.2.5-alpha.zip](dist/EShuRu-0.2.5-alpha.zip)；解压后运行 `Start-Trial.cmd`。已安装的系统输入法需运行项目 `installer/install.ps1` 升级。安装脚本会把“言桥全拼”加入当前用户的 Windows 键盘列表；若安装时使用了另一个管理员账户，请以日常用户运行一次 `EShuRuMaintenance.exe --register-input`，或打开一次言桥设置完成修复。若旧版退出后重启，可先执行 `build\0.2.5\x64\bin\EShuRuMaintenance.exe --stop-installed` 停用本次会话中的言桥并关闭其安装版辅助进程。
+精简本地开发包不随仓库提交；在本机运行 `python tools/package.py` 生成 `dist/EShuRu-0.2.5-alpha.zip`，解压后运行 `Start-Trial.cmd`。已安装的系统输入法需运行项目 `installer/install.ps1` 升级。安装脚本会把“言桥全拼”加入当前用户的 Windows 键盘列表；若安装时使用了另一个管理员账户，请以日常用户运行一次 `EShuRuMaintenance.exe --register-input`，或打开一次言桥设置完成修复。若旧版退出后重启，可先执行 `build\0.2.5\x64\bin\EShuRuMaintenance.exe --stop-installed` 停用本次会话中的言桥并关闭其安装版辅助进程。
 
 ## 构建与检查
 
